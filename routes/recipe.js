@@ -44,4 +44,9 @@ router.get('/', (req, res) => {
 
   })
 
+  router.post('/recipe/', (req, res) => {
+  
+
+    });
+
 module.exports = router;
