@@ -5,13 +5,13 @@ var router = express.Router();
 router.get('/:food', function(req, res, next) {
  // res.send(req.params.food);
 
- /*res.json({ name: req.params.food,
+ res.json({ name: req.params.food,
             instructions : 'instructions',
-            ingredients:'ingredients' })*/
+            ingredients:'ingredients' });
 
 
      // Rendering home.ejs page
-    res.render('home2', {
+ /*   res.render('home2', {
     foods: [
         {
             name: req.params.food,
@@ -19,7 +19,7 @@ router.get('/:food', function(req, res, next) {
             ingredients:'ingredient'
         }
     ]
-    });
+    });*/
 });
 
 router.post('/recipe', (request, response) => {
