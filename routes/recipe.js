@@ -22,13 +22,25 @@ router.get('/:food', function(req, res, next) {
     });*/
 });
 
-router.post('/recipe', (request, response) => {
+router.get('/', (req, res) => {
+
+    res.render('home2', {
+        foods: [
+            {
+                name: req.params.name,
+                instructions : req.params.instructions,
+                ingredients: req.params.ingredients
+            }
+        ]
+        });
+
+    /*
     const incomingAccount = request.body;
   
     accounts.push(incomingAccount);
   
     response.json(accounts);
-
+*/
 
   })
 
